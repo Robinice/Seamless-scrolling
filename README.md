@@ -11,7 +11,7 @@
    <div id="Marquee"> 
          <ul> 
               <li> 
-                  <div><img height="50" width="100" alt="图片1" /></div>
+                  <div><img alt="图片1" src="http://fpoimg.com/100x100" /></div>
               </li>
          </ul> 
    </div>  
