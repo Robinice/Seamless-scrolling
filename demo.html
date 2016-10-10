@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Jquery实现图片列表横向和纵向不间断滚动插件</title>
+<meta name="author" content="Jquery-School" />
+<meta name="Copyright" content="Jquery-School,www.jq-school.com" />
+<meta name="keywords" content="Jquery,Jquery资源,前端设计,div+css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="jQuery-jcMarquee.js"></script>
+
+<style>
+<!-- 
+ul,li{list-style:none}
+#Marquee_x { overflow:hidden; width: 580px; } 
+#Marquee_x ul li ,#Marquee_x ul li div{ float:left;} /* 横向滚动必须让所有li左浮动 */
+#Marquee_y { overflow:hidden; height:500px; width:200px; } 
+-->
+</style>
+<script>
+$(function(){
+    $('#Marquee_x').jcMarquee({ 'marquee':'x','margin_right':'10px','speed':1 });
+	$('#Marquee_y').jcMarquee({ 'marquee':'y','margin_bottom':'10px','speed':5 });
+});
+</script>
+</head>
+<body>
+<center>
+  <span style="font-size:15px; font-weight:bold; text-align:center; line-height:25px; color:#000;">Jquery实现图片列表横向和纵向不间断滚动插件<br />
+     <a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站出品（<a href="http://www.jq-school.com" style="color:#000" target="_blank">http://www.jq-school.com</a>）<br />
+	   （<a href="http://bbs.jq-school.com" target="_blank" style="color:#000">Jquery学堂交流社区</a>）	
+	  <br />
+      官方网站学习交流QQ群<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f221dd676cd5f7f51f6b580ff8fe1bdd2fefe911ae0e1137a6f79c58d6e11ebf"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="Jquery学堂QQ⑧群" title="Jquery学堂QQ⑧群"></a><br /><img src="http://www.jq-school.com//attached/image/20130828/20130828131529_8235.jpg" width="200" height="200" title="JquerySchool微信二维码" alt="JquerySchool微信二维码" />
+<br />亲！关注一下呗，转发一下呗，3Q！</span>
+</center>
+<div style=" width:750px; margin:50px auto;">
+ <h1>横向不间断滚动</h1>
+  <div id="Marquee_x">
+    <ul>
+      <li>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片1" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片2"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片3"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片4" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片5"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片6"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片7" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片8"/></div>
+      </li>
+    </ul>
+  </div>
+  <div style="clear:both;"></div>
+   <h1>纵向不间断滚动</h1>
+  <div id="Marquee_y">
+    <ul>
+      <li>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片9" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片10"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片11"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片12" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片13"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片14"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片15" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片16"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片17" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片18"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片19"/></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片20" /></div>
+        <div><img height="128" width="128" src="http://www.jq-school.com/images/ppt.png" alt="图片21"/></div>
+      </li>
+    </ul>
+  </div>
+  <!-- 结束 -->
+  <div id="ps" style=" width:600px; float:left">
+    <h1>jQuery-jcMarquee插件
+      <p>by Riddick</p>
+    </h1>
+    <h2>关键语句</h2>
+    <dl>
+      <dt>* jQuery - jcMarquee v0.10</dt>
+      <dt>* Copyright(c) 2012 by Riddick-design </dt>
+      <dt>* Date: 2012-01-07</dt>
+      <dt>* 相关参数 </dt>
+      <dd><span>'marquee':'x',</span> \\ 设置滚动方向，提供 marquee:x 或 marquee:y</dd>
+      <dd><span>'margin_bottom':'0',</span> \\ 设置margin_bottom值</dd>
+      <dd><span>'margin_right':'0',</span> \\ 设置margin_right值</dd>
+      <dd><span>'speed':'10'</span> \\ 设置滚动速度,单位mm</dd>
+      <dt>* 重要提醒</dt>
+      <dd><span>#Marquee_x ul li { float:left;}</span> \\ 横向滚动时必须让所有li左浮动</dd>
+    </dl>
+  </div>
+</div>
+</body>
+</html>
