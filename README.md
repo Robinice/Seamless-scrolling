@@ -8,15 +8,7 @@
  * 重要提醒
    #Marquee_x ul li { float:left;} // 横向滚动时必须让所有li左浮动 
  
- * HTML结构
-  <div id="Marquee"> 
-        <ul> 
-              <li> 
-                 <div><img alt="图片1" src="http://fpoimg.com/100x100" /></div>
-              </li>
-         </ul> 
-   </div>  
-  
+ 
 
 
 
